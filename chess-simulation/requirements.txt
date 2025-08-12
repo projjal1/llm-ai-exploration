@@ -1,0 +1,5 @@
+eel 
+langchain 
+requests 
+python-chess
+langchain_community

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chess AI</title>
+    <script src="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"
+        integrity="sha384-/KwQCjA1GWovZNV3QDVtvSMDzO4reGgarF/RqHipr7hIUElH3r5zNl9WEPPOBRIF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css"
+        integrity="sha384-47VeTDpmy4yT21gKPXQcLQYQZwlmz27gEH5NTrOmTk3G/SGvMyltclOW/Q8uE+sL" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="board" style="width: 400px;"></div>
+    <button onclick="getAIMove()">Get AI Move</button>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script>
+        var board = null
+        var game = null
+        var last = null
+
+        window.onload = ()=> {
+            board = Chessboard2('board', 'start');
+            game = new Chess()
+            last = game.fen()
+        }
+
+
+        async function getAIMove() {
+            let result = await eel.suggest_move(last)();
+            result = result.replace('\"', "")
+            last = result;
+            console.log(result);
+            game.load(result);
+            board.position(result);
+        }
+    </script>
+</body>
+
+</html>
