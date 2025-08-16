@@ -1,4 +1,4 @@
 *.pdf
-*pycache
+*__pycache__
 *_db
 *.DS_Store
