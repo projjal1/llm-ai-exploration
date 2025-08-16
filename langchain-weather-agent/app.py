@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
 # Weather information search
-API_KEY = "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"
+API_KEY = "USE your own API key"
 search = TavilySearchResults(max_results = 2, tavily_api_key=API_KEY)
 # result = search.invoke("what is the weather in malmo, sweden")
 # print(result)
