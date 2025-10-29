@@ -1,0 +1,75 @@
+User: What is phishing?
+Assistant: Phishing is a social engineering attack where an attacker tricks individuals into revealing sensitive information such as passwords or credit card numbers by pretending to be a trusted entity.
+
+User: How can I recognize a phishing email?
+Assistant: Look for mismatched email addresses, urgent or threatening language, misspellings, suspicious links, and unexpected attachments. Always verify the sender before clicking any links.
+
+User: Explain what ransomware is.
+Assistant: Ransomware is malicious software that encrypts a victim's files, making them inaccessible until a ransom is paid, usually in cryptocurrency. It often spreads through email attachments or malicious downloads.
+
+Incident: A company experiences a ransomware attack that encrypted its HR database. The attacker demanded 3 BTC for decryption.
+Response: The company isolated infected systems, restored data from backups, notified law enforcement, and strengthened email filtering policies.
+
+User: How can we prevent ransomware attacks?
+Assistant: Use regular backups, apply security patches promptly, train employees to identify phishing emails, and implement endpoint protection and network segmentation.
+
+User: What is a firewall?
+Assistant: A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predefined security rules.
+
+Definition: Intrusion Detection System (IDS) — a tool that monitors network or system activity for malicious actions or policy violations.
+
+User: What’s the difference between IDS and IPS?
+Assistant: IDS (Intrusion Detection System) detects and alerts on suspicious activity, while IPS (Intrusion Prevention System) can also block the traffic automatically.
+
+User: What are the most common cybersecurity attacks?
+Assistant: Common attacks include phishing, ransomware, DDoS attacks, SQL injection, cross-site scripting (XSS), and credential stuffing.
+
+User: Explain SQL injection.
+Assistant: SQL injection is a web attack technique where malicious SQL queries are inserted into input fields to manipulate a database. It can lead to data leaks or unauthorized access.
+
+User: How can SQL injection be prevented?
+Assistant: Use parameterized queries, ORM frameworks, and input validation to prevent attackers from injecting SQL commands.
+
+Log entry:
+[2025-01-21 14:03:12] Failed SSH login from 203.0.113.14 to user 'admin'
+[2025-01-21 14:05:32] Multiple failed logins detected from the same IP
+Response: Block IP 203.0.113.14, enable fail2ban, enforce key-based authentication.
+
+User: What is a zero-day vulnerability?
+Assistant: A zero-day vulnerability is a software flaw unknown to the vendor, giving attackers an opportunity to exploit it before a patch is available.
+
+User: How does multi-factor authentication (MFA) improve security?
+Assistant: MFA adds an extra layer of security by requiring two or more verification methods — something you know (password), something you have (phone or token), and something you are (biometric).
+
+User: What is social engineering?
+Assistant: Social engineering manipulates human behavior to bypass security controls, often through deception, urgency, or authority.
+
+User: What are common signs of a compromised system?
+Assistant: Unexpected slowdowns, unknown processes, high network usage, disabled antivirus, or unexpected pop-ups are all potential indicators.
+
+User: What is penetration testing?
+Assistant: Penetration testing simulates cyberattacks on systems or applications to identify vulnerabilities before real attackers can exploit them.
+
+User: What is the CIA Triad?
+Assistant: The CIA Triad stands for Confidentiality, Integrity, and Availability — the three core principles of information security.
+
+User: How can I secure an API?
+Assistant: Use authentication tokens, validate inputs, apply rate limiting, encrypt communications with HTTPS, and audit access logs regularly.
+
+User: Explain the difference between symmetric and asymmetric encryption.
+Assistant: Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses a public key for encryption and a private key for decryption.
+
+User: What is a brute-force attack?
+Assistant: A brute-force attack systematically tries all possible passwords until the correct one is found. It can be mitigated using account lockouts and CAPTCHA mechanisms.
+
+User: What is endpoint security?
+Assistant: Endpoint security protects user devices such as laptops, phones, and servers from threats by using antivirus, firewalls, and intrusion prevention tools.
+
+User: How can I secure my home Wi-Fi network?
+Assistant: Change default router passwords, use WPA3 encryption, disable WPS, update firmware, and hide the SSID if possible.
+
+User: What is threat intelligence?
+Assistant: Threat intelligence involves collecting and analyzing information about potential or active cyber threats to improve defenses and response strategies.
+
+User: How does a VPN protect privacy?
+Assistant: A VPN encrypts internet traffic between your device and a remote server, hiding your IP address and protecting your data from interception on public networks.
