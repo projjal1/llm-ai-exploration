@@ -6,6 +6,7 @@ model_name = "distilgpt2"  # or "EleutherAI/gpt-neo-125M"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token 
 
+# Load the pre-trained model
 model = AutoModelForCausalLM.from_pretrained(model_name)
 model.config.pad_token_id = model.config.eos_token_id
 
@@ -18,6 +19,7 @@ def tokenize(batch):
     tokens["labels"] = tokens["input_ids"].copy()
     return tokens
 
+# Apply the tokenize function to the dataset
 dataset = dataset.map(tokenize, batched=True)
 
 # 4. Training arguments
